@@ -17,4 +17,4 @@ setInterval(createHeart, 500);
 
 setTimeout(() => {
   window.location.href = "index2.html"; // change to your next page URL
-}, 10000);
+}, 5000);
