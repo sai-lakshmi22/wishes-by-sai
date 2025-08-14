@@ -1,26 +1,48 @@
 body {
-        margin: 0;
-        background-color: #ffe6f0;
-        font-family: 'Poppins', sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh; /* Full screen height */
-        padding: 20px; /* Padding to avoid text touching edges */
-        box-sizing: border-box;
-        overflow-y: auto; /* Allow scroll if needed */
-    }
+    margin: 0;
+    background-color: #ffe6f0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px; /* Smaller padding for mobile */
+    box-sizing: border-box;
+    overflow-y: auto;
+}
 
-    .message {
-        background: white;
-        border-radius: 15px;
-        padding: 20px;
-        max-width: 500px;
-        width: 100%;
-        box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
-        text-align: center;
-    }
+.message {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 0 auto; /* Ensures center alignment */
+}
 
+.container {
+    text-align: center;
+    padding: 20px; /* Reduced padding for small screens */
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto; /* Center horizontally */
+}
+
+.btnback {
+    position: fixed;
+    bottom: 20px; /* Lower for mobile view */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
     .message h2 {
         font-family: 'Satisfy', cursive;
         font-size: 30px;
@@ -37,12 +59,7 @@ body {
         margin-top: 10px;
         font-weight: bold;
     }
-.container {
-  text-align: center;
-  padding: 50px 20px;
-  position: relative;
-  z-index: 1;
-}
+
 
 h1 {
   color: #d10068;
@@ -100,19 +117,7 @@ h2 {
   z-index: 0;
   pointer-events: none;
 }
-.btnback {
-    position: fixed;
-    bottom: 80px; /* Distance from the bottom */
-    left: 50%; /* Move to center horizontally */
-    transform: translateX(-50%); /* Adjust to perfectly center */
-    padding: 10px 20px;
-    background-color: blueviolet;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
+
 
 .btnback:hover {
     background-color: #0056b3;
