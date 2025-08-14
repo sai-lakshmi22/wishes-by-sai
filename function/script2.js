@@ -72,3 +72,4 @@
     // Go back to previous page on refresh
     window.history.back();
   }
+  

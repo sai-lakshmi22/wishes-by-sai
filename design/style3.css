@@ -100,21 +100,22 @@ h2 {
   z-index: 0;
   pointer-events: none;
 }
-.btnback{
-      position: fixed;
-      bottom: 80px;   /* Distance from the bottom */
-      left: 20px;     /* Distance from the left */
-      padding: 10px 20px;
-      background-color: blueviolet;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      margin-left: 1050px;
-    }
+.btnback {
+    position: fixed;
+    bottom: 80px; /* Distance from the bottom */
+    left: 50%; /* Move to center horizontally */
+    transform: translateX(-50%); /* Adjust to perfectly center */
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
 
-    .btnback:hover {
-      background-color: #0056b3;
-    }
-  
+.btnback:hover {
+    background-color: #0056b3;
+}
+
+
